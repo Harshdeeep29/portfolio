@@ -15,7 +15,7 @@ const App = () => {
 
     // Data from the resume
     const resumeData = {
-        name: "Harshdeep Gorade",
+        name: "rshdeep Gorade",
         title: "Software Developer",
         contact: {
             phone: "+91 8779246114",
