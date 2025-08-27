@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Demo from './demo';
+
 
 // Main App component
 const App = () => {
