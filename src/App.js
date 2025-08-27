@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Demo from './demo';
 
 // Main App component
 const App = () => {
@@ -52,78 +53,93 @@ const App = () => {
 
 
     // Data from the resume
-    const resumeData = {
-        name: "Harshdeep Gorade",
-        title: "Software Developer",
-        contact: {
-            phone: "+91 8779246114",
-            email: "goradeharshdeep29@gmail.com",
-            linkedin: "https://www.linkedin.com/in/harshdeep-gorade-b241b2252/", // Placeholder, please update
-            github: "https://github.com/Harshdeeep29/" // Placeholder, please update
-        },
-        profile: "Enthusiastic Full-Stack Developer with expertise in building responsive web applications, API integrations, and scalable backend systems. Skilled in React.js, PHP, Java, JavaScript, and database management (MySQL, PostgreSQL). Proven ability to deliver user-centric designs and seamless user experiences.",
-        education: {
-            degree: "Bachelor of Technology in Information Technology",
-            university: "Vasantdada Patil Pratishthan's College of Engineering and Visual Arts",
-            years: "2021-2025",
-            gpa: "7.5/10"
-        },
-        skills: {
-            programmingLanguages: ["Java", "JavaScript", "PHP", "SQL", "Python"],
-            frameworksLibraries: ["React.js", "Bootstrap", "AJAX", "MVC Architecture", "JDBC", "Servlets"],
-            databases: ["MySQL", "PostgreSQL", "phpMyAdmin"],
-            webTechnologies: ["HTML", "CSS", "REST API", "JSON"],
-            softwareEngineering: ["OOP", "Data Structures & Algorithms (DSA)", "API Integration", "CRUD Operations", "SDLC", "Git", "GitHub"]
-        },
-        projects: [
-            {
-                name: "OOHDODO Advertising Website",
-                technologies: "PHP, JavaScript, AJAX, MySQL",
-                description: [
-                    "Designed and developed a dynamic vendor and admin portal with role-based access control (RBAC).",
-                    "Implemented product approval workflows and intelligent filtering, improving content discoverability.",
-                    "Enhanced responsiveness and reduced page load times using AJAX-powered UI interactions."
-                ]
-            },
-            {
-                name: "Online Examination System",
-                technologies: "React.js, PHP, MySQL, Bootstrap",
-                description: [
-                    "Built a secure, role-based web platform for exam creation, test management, and real-time result tracking.",
-                    "Integrated user authentication, input validation, and performance analytics to ensure system reliability.",
-                    "Applied best practices for data integrity and secure session management."
-                ]
-            }
-        ],
-        experience: [
-            {
-                title: "PHP Backend Developer",
-                company: "YESWEUS",
-                duration: "Feb 2025 - May 2025",
-                responsibilities: [
-                    "Contributed to 3 PHP-based projects focused on backend development using PHP and MySQL.",
-                    "Built secure systems with login, validation, and session handling.",
-                    "Developed admin dashboards with full CRUD functionality and real-time data updates."
-                ]
-            },
-            {
-                title: "Frontend Developer",
-                company: "IBM",
-                duration: "Jun 2023 - Jul 2023",
-                responsibilities: [
-                    "Worked on 1 project involving React.js.",
-                    "Implemented image upload functionality using PHP."
-                ]
-            }
-        ],
-        certifications: [
-            "Cloud Essentials for Developers (IBM)",
-            "Java Programming Essentials (Coursera)"
-        ]
-    };
+const resumeData = {
+  name: "Harshdeep Gorade",
+  title: "Software Developer",
+  contact: {
+    phone: "+91 8779246114",
+    email: "goradeharshdeep29@gmail.com",
+    linkedin: "https://www.linkedin.com/in/harshdeep-gorade-b241b2252/",
+    github: "https://github.com/Harshdeeep29/"
+  },
+  profile: "Enthusiastic Full-Stack Developer with expertise in building responsive web applications, API integrations, and scalable backend systems. Skilled in React.js, PHP, Java, JavaScript, and database management (MySQL, PostgreSQL). Proven ability to deliver user-centric designs and seamless user experiences.",
+  education: {
+    degree: "Bachelor of Technology in Information Technology",
+    university: "Vasantdada Patil Pratishthan's College of Engineering and Visual Arts",
+    years: "2021-2025",
+    gpa: "7.75/10"
+  },
+  skills: {
+    programmingLanguages: ["Java", "JavaScript", "PHP", "SQL", "Python"],
+    frameworksLibraries: ["React.js", "Bootstrap", "AJAX", "MVC Architecture", "Spring Boot", "JPA", "Java Selenium"],
+    databases: ["MySQL", "PostgreSQL", "Oracle", "phpMyAdmin"],
+    webTechnologies: ["HTML", "CSS", "REST API", "JSON", "POSTMAN", "DBMS", "SDLC"],
+    softwareEngineering: ["OOP", "API Integration", "CRUD Operations", "Git", "Automation Testing", "Manual Testing"]
+  },
+  projects: [
+    {
+      name: "OOHDODO Advertising Website",
+      technologies: "PHP, JavaScript, AJAX, MySQL",
+      description: [
+        "Designed and developed a dynamic vendor and admin portal with role-based access control (RBAC).",
+        "Implemented product approval workflows and intelligent filtering, improving content discoverability.",
+        "Enhanced responsiveness and reduced page load times using AJAX-powered UI interactions."
+      ],
+      github: "https://github.com/Harshdeeep29/advertising-agencies-"
+    },
+    {
+      name: "Car Rental Web-Application",
+      technologies: "React.js, Spring Boot, PostgreSQL, Axios, Bootstrap, Docker",
+      description: [
+        "Developed a full-stack car rental platform with React, Spring Boot, and PostgreSQL, secured by authentication.",
+        "Designed a dual-portal system for Admins to manage car inventory/bookings and Users to rent cars with document submission.",
+        "Containerized the entire application using Docker for consistent deployment and scalability."
+      ],
+      github: "https://github.com/Harshdeeep29/car-rental-app"
+    },
+    {
+      name: "Online Examination System",
+      technologies: "React.js, PHP, MySQL, Bootstrap",
+      description: [
+        "Built a secure, role-based web platform for exam creation, test management, and real-time result tracking.",
+        "Integrated user authentication, input validation, and performance analytics to ensure system reliability.",
+        "Applied best practices for data integrity and secure session management."
+      ],
+      github: "https://github.com/Harshdeeep29/Online-Examination-Management-System" // update if repo exists
+    }
+  ],
+  experience: [
+    {
+      title: "PHP Backend Developer",
+      company: "YESWEUS",
+      duration: "Feb 2025 - May 2025",
+      responsibilities: [
+        "Contributed to 3 PHP-based projects focused on backend development using PHP and MySQL.",
+        "Built secure systems with login, validation, and session handling.",
+        "Developed admin dashboards with full CRUD functionality and real-time data updates."
+      ]
+    },
+    {
+      title: "Frontend Developer",
+      company: "IBM",
+      duration: "Jun 2023 - Jul 2023",
+      responsibilities: [
+        "Worked on 1 project involving React.js.",
+        "Implemented image upload functionality using PHP."
+      ]
+    }
+  ],
+  certifications: [
+    "Cloud Essentials for Developers (IBM)",
+    "Java Programming Essentials (Coursera)"
+  ]
+};
+
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 font-inter">
+
+            
             {/* Navigation Bar */}
             <nav className="fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-90 backdrop-blur-sm shadow-lg z-50 p-4">
                 <div className="container mx-auto flex justify-between items-center">
@@ -183,6 +199,8 @@ const App = () => {
                 )}
             </nav>
 
+            
+
             {/* Hero Section */}
             {/* Added pt-16 to the inner content div to push it down below the fixed nav bar */}
             <header id="profile" className="relative h-screen flex items-center justify-center text-center overflow-hidden p-4 sm:p-6 md:p-8">
@@ -217,6 +235,10 @@ const App = () => {
                     </div>
                 </div>
             </header>
+
+       <div class="bg-white text-black">
+  <Demo/>
+</div>
 
             {/* Main Content Sections */}
             <main className="container mx-auto px-4 sm:px-6 py-12 sm:py-16"> {/* Adjusted main padding */}
@@ -259,39 +281,65 @@ const App = () => {
                     </div>
                 </section>
 
-                {/* Projects Section */}
-                <section id="projects" className="mb-16 p-6 sm:p-8 bg-gray-800 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-[1.02]">
-                    <h3 className="text-3xl sm:text-4xl font-bold text-blue-400 mb-8 text-center">Projects</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8"> {/* Adjusted gap */}
-                        {resumeData.projects.map((project, index) => (
-                            <div key={index} className="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                                <h4 className="text-xl sm:text-2xl font-semibold text-gray-100 mb-3">{project.name}</h4>
-                                <p className="text-blue-300 text-base sm:text-lg mb-4">Technologies: {project.technologies}</p>
-                                <ul className="list-disc list-inside text-gray-300 space-y-2 flex-grow text-base sm:text-lg"> {/* Adjusted text size */}
-                                    {project.description.map((point, idx) => (
-                                        <li key={idx}>{point}</li>
-                                    ))}
-                                </ul>
-                                {/* Add project links if available */}
-                                {/* <div className="mt-4 flex space-x-4">
-                                     <a href="#" className="text-blue-400 hover:text-blue-300 flex items-center">
-                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                             <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                                             <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-                                         </svg>
-                                         Live Demo
-                                     </a>
-                                     <a href="#" className="text-blue-400 hover:text-blue-300 flex items-center">
-                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                             <path fillRule="evenodd" d="M12 1.586l-4 4A2 2 0 007 7.414V16a2 2 0 002 2h4a2 2 0 002-2V7.414a2 2 0 00-.586-1.414l-4-4zM14 10a2 2 0 11-4 0 2 2 0 014 0z" clipRule="evenodd" />
-                                         </svg>
-                                         GitHub Repo
-                                     </a>
-                                 </div> */}
-                            </div>
-                        ))}
-                    </div>
-                </section>
+              {/* Projects Section */}
+<section
+  id="projects"
+  className="mb-16 p-6 sm:p-8 bg-gray-800 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-[1.02]"
+>
+  <h3 className="text-3xl sm:text-4xl font-bold text-blue-400 mb-8 text-center">
+    Projects
+  </h3>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+    {resumeData.projects.map((project, index) => (
+      <div
+        key={index}
+        className="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col"
+      >
+        {/* Project Title */}
+        <h4 className="text-xl sm:text-2xl font-semibold text-gray-100 mb-3">
+          {project.name}
+        </h4>
+
+        {/* Technologies */}
+        <p className="text-blue-300 text-base sm:text-lg mb-4">
+          Technologies: {project.technologies}
+        </p>
+
+        {/* Description */}
+        <ul className="list-disc list-inside text-gray-300 space-y-2 flex-grow text-base sm:text-lg">
+          {project.description.map((point, idx) => (
+            <li key={idx}>{point}</li>
+          ))}
+        </ul>
+
+        {/* Links (GitHub / Live Demo) */}
+        <div className="mt-4 flex space-x-4">
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-lg shadow-md transition-colors duration-300"
+            >
+              GitHub
+            </a>
+          )}
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm rounded-lg shadow-md transition-colors duration-300"
+            >
+              Live Demo
+            </a>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
 
                 {/* Work Experience Section */}
                 <section id="experience" className="mb-16 p-6 sm:p-8 bg-gray-800 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-[1.02]">
